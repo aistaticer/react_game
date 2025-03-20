@@ -5,7 +5,7 @@ FROM node:16-alpine
 WORKDIR /app
 
 # package.jsonとpackage-lock.jsonをコピー
-COPY app/package*.json ./
+COPY package*.json ./
 
 # 依存関係をインストール
 RUN npm install
